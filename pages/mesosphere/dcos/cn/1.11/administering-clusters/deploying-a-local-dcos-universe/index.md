@@ -8,7 +8,7 @@ enterprise: false
 ---
 
 
-您可以通过本地 [Universe] (https://github.com/mesosphere/universe)在数据中心（无互联网访问）上安装和运行 DC/OS 服务。
+您可以通过本地 [Universe](https://github.com/mesosphere/universe)在数据中心（无互联网访问）上安装和运行 DC/OS 服务。
 
 
 您可以部署包含所有已认证包的本地 Universe（最简单），或包含所选包的本地 Universe（高级）。

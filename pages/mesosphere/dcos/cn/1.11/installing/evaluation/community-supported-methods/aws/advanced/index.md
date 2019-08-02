@@ -14,7 +14,7 @@ excerpt: 使用 AWS CloudFormation 模板创建和扩展 DC/OS 群集
 高级 AWS CloudFormation 模板为创建和扩展 DC/OS 群集带来了优势和灵活性。通过这些模板，您可以从一整套 DC/OS 配置选项中进行选择。
 
  - 在现有的 VPC/子网组合上实例化完整的 DC/OS 群集。
- - 通过添加更多的 [代理] (/1.8/overview/concepts/#agent) 节点来扩展和更新现有的 DC/OS 群集。
+ - 通过添加更多的 [代理](/mesosphere/dcos/1.11/overview/concepts/#agent) 节点来扩展和更新现有的 DC/OS 群集。
 
 模板一起用于创建 DC/OS 群集。驱动这些模板的是 AWS CloudFormation 用于创建每个堆栈的参数。
 
@@ -35,7 +35,7 @@ excerpt: 使用 AWS CloudFormation 模板创建和扩展 DC/OS 群集
 - 与群集相同分域的 AWS EC2 密钥对。密钥对不能跨分域共享。AWS 密钥对使用公钥加密功能提供对 AWS 群集的安全登录。有关创建 AWS EC2 密钥对的详细信息，请参阅 <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair" target="_blank">文档</a>。
 - AWS [命令行界面](https://aws.amazon.com/cli/)。
 - CLI JSON 处理器 [jq](https://github.com/stedolan/jq/wiki/Installation)。
-- 符合 bootstrap 节点 [系统要求] 的节点(/cn/1.11/installing/production/system-requirements/)。
+- 符合 bootstrap 节点 [系统要求] 的节点(/mesosphere/dcos/cn/1.11/installing/production/system-requirements/)。
 - 具有读写访问权限的 AWS s3 bucket。
  - S3 bucket 必须具备 bucket 策略，以便让启动的 AWS 实例从 s3 bucket下载文件。以下是任何人均可下载的示例政策：
 

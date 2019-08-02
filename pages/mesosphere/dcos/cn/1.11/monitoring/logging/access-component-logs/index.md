@@ -14,7 +14,7 @@ enterprise: true
 
 | 权限字符串 | full | C | R | U | D |
 |----------------------------|------|---|---|---|---|
-| `dcos:adminrouter:ops:system-logs` <br>控制对 [系统日志 API] 的访问(/cn/1.11/api/master-routes/#system)。| x | | | | |
+| `dcos:adminrouter:ops:system-logs` <br>控制对 [系统日志 API] 的访问(/mesosphere/dcos/cn/1.11/api/master-routes/#system)。| x | | | | |
 
 **先决条件：**
 

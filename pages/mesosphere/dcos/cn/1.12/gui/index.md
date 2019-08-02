@@ -28,7 +28,7 @@ DC/OS Web 界面提供了 DC/OS 群集的丰富图形视图。通过 Web 界面�
 
 图 3. 标题栏群集菜单
 
-DC/OS Enterprise 中还有用于管理 [链接群集] (/1.12/administering-clusters/multiple-clusters/cluster-links/)的链接。
+DC/OS Enterprise 中还有用于管理 [链接群集](/mesosphere/dcos/1.12/administering-clusters/multiple-clusters/cluster-links/)的链接。
 
 ![DC/OS UI Cluster Menu with Linked Cluster](/mesosphere/dcos/1.12/img/switch-cluster-1-12.png)
 

@@ -198,7 +198,7 @@ Now that you have installed the Redis package, deployed the service on the clust
 
 1. Open a terminal shell on a computer with network access to the cluster.
 
-1. Open a secure shell ([SSH])(/1.13/administering-clusters/sshcluster/) session on the cluster node where the Redis service is running.
+1. Open a secure shell [SSH](/mesosphere/dcos/1.13/administering-clusters/sshcluster/) session on the cluster node where the Redis service is running.
 
     There are several ways you can determine the cluster node address and Mesos task identifier for the Redis service running on that node. 
     

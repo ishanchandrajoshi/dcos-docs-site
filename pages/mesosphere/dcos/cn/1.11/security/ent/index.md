@@ -106,7 +106,7 @@ DC/OS 认证令牌是 [JSON Web 令牌 (JWT)](https://jwt.io/introduction/)，�
 
 ## <a name="passwords"></a>密码
 
-集群本地用户帐户（不使用 LDAP、SAML 或 OpenID Connect 的账户）的凭据包含用户名和密码，可用于验证但不能复制用户密码。使用 [crypt(3)] (http://man7.org/linux/man-pages/man3/crypt.3.html) SHA-512 对密码进行单独加盐和密码散列。这会导致单向散列，可用于验证但不能复制用户密码。为了进一步阻止暴力攻击并达到或超过 NIST FIPS 安全要求，散列函数使用 128 位盐长度执行多次迭代。
+集群本地用户帐户（不使用 LDAP、SAML 或 OpenID Connect 的账户）的凭据包含用户名和密码，可用于验证但不能复制用户密码。使用 [crypt(3)](http://man7.org/linux/man-pages/man3/crypt.3.html) SHA-512 对密码进行单独加盐和密码散列。这会导致单向散列，可用于验证但不能复制用户密码。为了进一步阻止暴力攻击并达到或超过 NIST FIPS 安全要求，散列函数使用 128 位盐长度执行多次迭代。
 
 在 DC/OS IAM 验证了您的凭据后，就会将认证令牌返回给您。然后，认证令牌将用于会话期间进一步请求身份认证。这样，密码不需要存储在客户端，并且只能在输入后立即通过电报发送。通过电报，使用 TLS 加密身份认证请求。TLS 是必需的，并以严格模式执行，但在宽容模式下可选。有关更多信息，请参阅[安全模式](/mesosphere/dcos/cn/1.11/security/ent/#security-modes)。
 

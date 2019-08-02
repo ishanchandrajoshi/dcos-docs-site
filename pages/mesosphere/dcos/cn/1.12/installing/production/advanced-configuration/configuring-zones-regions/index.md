@@ -84,7 +84,7 @@ HA 服务应当分离，责任在服务之间分派。例如，Web 服务应从�
 快速故障切换可通过以下方式实现：
 
  * 使用 HA 负载均衡器，如 [Marathon-LB](/mesosphere/dcos/services/marathon-lb/)，或内部 [第 4 层负载均衡器](/mesosphere/dcos/1.12/networking/load-balancing-vips/)。
- * 根据 [12 因素应用] (http://12factor.net/) 原则构建应用程序。
+ * 根据 [12 因素应用](http://12factor.net/) 原则构建应用程序。
  * 在构建服务时遵循 REST 最佳做法：尤其是避免在请求之间在服务器上存储客户端状态。
 
 许多 DC/OS 服务在出现错误时遵循故障快速切换模式。具体而言，出现不可恢复的情况时（如失去领导作用），Mesos 和 Marathon 都将关闭。

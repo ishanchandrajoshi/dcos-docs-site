@@ -30,7 +30,7 @@ menuWeight: 21
 
 ### 第 1 步：检查 GUI
 
-首先检查 [DC/OS GUI] (/1.12/gui/)，或使用 CLI [检查任务的状态] (/1.12/deploying-services/task-handling/)。如果任务有关联的[运行状况检查](/mesosphere/dcos/1.12/deploying-services/creating-services/health-checks/)，则检查任务的运行状况也是一个好主意。
+首先检查 [DC/OS GUI](/mesosphere/dcos/1.12/gui/)，或使用 CLI [检查任务的状态](/mesosphere/dcos/1.12/deploying-services/task-handling/)。如果任务有关联的[运行状况检查](/mesosphere/dcos/1.12/deploying-services/creating-services/health-checks/)，则检查任务的运行状况也是一个好主意。
 
 如果相关，则检查 [Mesos GUI](/mesosphere/dcos/1.12/tutorials/dcos-debug/tools/#mesos-ui) 或 [Exhibitor/ZooKeeper GUI](/mesosphere/dcos/1.12/tutorials/dcos-debug/tools/#zoo-ui)，以获取可能相关的调试信息。
 

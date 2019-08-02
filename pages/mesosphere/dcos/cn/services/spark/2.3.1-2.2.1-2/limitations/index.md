@@ -27,7 +27,7 @@ featureMaturity:
  Spark Dispatcher 实例可用的所有密钥。
 
 * 使用 Kerberos 和 HDFS 时，Spark Driver 会生成委派令牌，并将其
- 通过 RPC 分发给执行程序。驱动程序对执行程序的身份认证使用 [共享密钥] (https://spark.apache.org/docs/latest/security.html#spark-security)完成。没有身份认证，执行程序容器也可能在驱动程序上注册并获取授权令牌。要确保委派令牌分配安全，使用 `--executor-auth-secret` 选项。
+ 通过 RPC 分发给执行程序。驱动程序对执行程序的身份认证使用 [共享密钥](https://spark.apache.org/docs/latest/security.html#spark-security)完成。没有身份认证，执行程序容器也可能在驱动程序上注册并获取授权令牌。要确保委派令牌分配安全，使用 `--executor-auth-secret` 选项。
 
 * Spark 在 Docker 容器中运行所有组件。Docker 镜像包含完整的 Linux 用户空间，其具有
  自己的 `/etc/users` 文件，因此用户 `nobody` 可以在

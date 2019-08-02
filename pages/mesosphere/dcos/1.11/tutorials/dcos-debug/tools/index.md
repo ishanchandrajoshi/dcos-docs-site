@@ -11,7 +11,25 @@ menuWeight: 11
 
 DC/OS comes with several tools relevant for application debugging:
 
-- [DC/OS web interfaces](#dcos-web)
+- [DC/OS web interfaces](#dcos-web-interfaces)
+  - [DC/OS web interface](#dcos-web-interface)
+  - [Mesos web interface](#mesos-web-interface)
+  - [ZooKeeper web interface](#zookeeper-web-interface)
+- [Logs](#logs)
+      - [Connect to Master Node](#connect-to-master-node)
+      - [Raise Log Level on Mesos Agent 10.0.2.219](#raise-log-level-on-mesos-agent-1002219)
+  - [Task/Application Logs](#taskapplication-logs)
+  - [Scheduler/Marathon Logs](#schedulermarathon-logs)
+  - [Mesos Agent Logs](#mesos-agent-logs)
+  - [Mesos Master Logs](#mesos-master-logs)
+  - [System Logs](#system-logs)
+- [Metrics](#metrics)
+- [Interactive](#interactive)
+- [HTTP Endpoints](#http-endpoints)
+  - [`state-summary`](#state-summary)
+  - [`queue`](#queue)
+- [Community](#community)
+- [Other Tools](#other-tools)
 
 - [Logs](#logs)
 
@@ -31,7 +49,25 @@ DC/OS comes with several tools relevant for application debugging:
 
 DC/OS provides many web interfaces for various components, these are particularly when debugging application deployment issues:
 
-- [DC/OS web interface](#dcos-ui)
+- [DC/OS web interfaces](#dcos-web-interfaces)
+  - [DC/OS web interface](#dcos-web-interface)
+  - [Mesos web interface](#mesos-web-interface)
+  - [ZooKeeper web interface](#zookeeper-web-interface)
+- [Logs](#logs)
+      - [Connect to Master Node](#connect-to-master-node)
+      - [Raise Log Level on Mesos Agent 10.0.2.219](#raise-log-level-on-mesos-agent-1002219)
+  - [Task/Application Logs](#taskapplication-logs)
+  - [Scheduler/Marathon Logs](#schedulermarathon-logs)
+  - [Mesos Agent Logs](#mesos-agent-logs)
+  - [Mesos Master Logs](#mesos-master-logs)
+  - [System Logs](#system-logs)
+- [Metrics](#metrics)
+- [Interactive](#interactive)
+- [HTTP Endpoints](#http-endpoints)
+  - [`state-summary`](#state-summary)
+  - [`queue`](#queue)
+- [Community](#community)
+- [Other Tools](#other-tools)
 
 - [Mesos web interface](#mesos-ui)
 
@@ -246,7 +282,7 @@ Ideally, with the dashboard configured and functioning, you can identify potenti
 
 Sometimes the task logs provide insufficient help. In these cases, using your favorite Linux tools (e.g. `curl`, `cat`, `ping`, etc...) to get an interactive point of view could be a worthwhile next step.
 
-For example, if you are using a [Universal Container Runtime (UCR)] (/latest/deploying-services/containerizers/ucr/), you can use `dcos task exec` as follows:
+For example, if you are using a [Universal Container Runtime (UCR)](/latest/deploying-services/containerizers/ucr/), you can use `dcos task exec` as follows:
 
 ```bash
 dcos task exec -it <mycontainerid>

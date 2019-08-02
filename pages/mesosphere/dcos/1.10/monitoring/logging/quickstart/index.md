@@ -181,4 +181,4 @@ You can view logs of DC/OS components with the `dcos node log` command.
     Thu Dec 15 00:34:08 2016 ip-10-0-6-165.us-west-2.compute.internal java [2541] [2016-12-15 00:34:08,121] INFO  Received status update for task test-log.2fc56009-c25d-11e6-81b2-9a5d88789ccd: TASK_RUNNING (Reconciliation: Latest task state) (mesosphere.marathon.MarathonScheduler$$EnhancerByGuice$$28056dde:Thread-297)
     ...
     ```
-More commands can be found in the [DC/OS Node section of the Command Reference]. (/1.10/cli/command-reference/dcos-node/dcos-node-log/)
+More commands can be found in the [DC/OS Node section of the Command Reference](/mesosphere/dcos/1.10/cli/command-reference/dcos-node/dcos-node-log/).

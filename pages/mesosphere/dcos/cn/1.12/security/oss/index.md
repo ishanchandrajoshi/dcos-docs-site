@@ -6,7 +6,7 @@ menuWeight: 80
 ---
 <!-- The source repository for this topic is https://github.com/dcos/dcos-docs-site -->
 
-确保根据[保护群集] (/cn/1.12/administering-clusters/securing-your-cluster/) 的信息设置网络。
+确保根据[保护群集](/mesosphere/dcos/cn/1.12/administering-clusters/securing-your-cluster/) 的信息设置网络。
 
 您可以使用 DC/OS [oauth](https://github.com/dcos/dcos-oauth) 在数据中心启用身份认证。通过 DC/OS Web 界面管理身份认证。Admin Router 执行访问控制。
 

@@ -142,7 +142,7 @@ dcos:service:marathon:marathon:services:/ full
 
 
 ### 任务详情和日志
-要查看任务详情和日志，您必须授予访问 [Mesos UI] 的权限(/cn/1.12/security/ent/gui-permissions/mesos-ui/)。
+要查看任务详情和日志，您必须授予访问 [Mesos UI] 的权限(/mesosphere/dcos/cn/1.12/security/ent/gui-permissions/mesos-ui/)。
 
 ## 严格
 

@@ -666,7 +666,7 @@ dcos security org users grant <service-account-id> dcos:mesos:master:volume:prin
 
  图 3. 添加权限字符串
 
-1. 在 **Permissions Strings** 字段中复制并粘贴权限。根据您的[安全模式]选择权限字符串(/cn/1.11/security/ent/#security-modes)。
+1. 在 **Permissions Strings** 字段中复制并粘贴权限。根据您的[安全模式]选择权限字符串(/mesosphere/dcos/cn/1.11/security/ent/#security-modes)。
 
  ### 已禁用
 

@@ -21,11 +21,11 @@ enterprise: true
 |----------------------------|------|---|---|---|---|
 | `dcos:adminrouter:ops:mesos`<br> 控制对 Mesos 管理节点 UI 和 API 的访问。| x | | | | |
 | `dcos:adminrouter:ops:slave`<br> 控制对 Mesos 代理节点 UI 和 API 的访问。| x | | | | |
-| `dcos:mesos:agent:executor:app_id[:<service-or-job-group>]`<br> 控制对服务和作业的查看访问权限 [执行器信息] (https://mesos.apache.org/documentation/latest/app-framework-development-guide/)。| | | x | | |
+| `dcos:mesos:agent:executor:app_id[:<service-or-job-group>]`<br> 控制对服务和作业的查看访问权限 [执行器信息](https://mesos.apache.org/documentation/latest/app-framework-development-guide/)。| | | x | | |
 | `dcos:mesos:agent:framework:role[:<role-name>]`<br> 控制对在特定角色注册的 DC/OS 服务的查看访问权限。| | | x | | |
 | `dcos:mesos:agent:sandbox:app_id[:<service-or-job-group>]`<br> 控制对 Mesos 沙盒的访问。| | | x | | |
 | `dcos:mesos:agent:task:app_id[:<service-or-job-group>]`<br> 控制对任务信息的访问。| | | x | | |
-| `dcos:mesos:master:executor:app_id[:<service-or-job-group>]`<br> 控制对 [执行器] (https://mesos.apache.org/documentation/latest/app-framework-development-guide/) 服务和作业群组的访问。| | | x | | |
+| `dcos:mesos:master:executor:app_id[:<service-or-job-group>]`<br> 控制对 [执行器](https://mesos.apache.org/documentation/latest/app-framework-development-guide/) 服务和作业群组的访问。| | | x | | |
 | `dcos:mesos:master:framework:role[:<role-name>]`<br> 控制按角色对在 [Mesos] | (https://mesos.apache.org/documentation/latest/roles/) 注册为框架的访问。| | x | | | |
 | `dcos:mesos:master:task:app_id[:<service-or-job-group>]`<br> 控制运行任务的访问权限。| | x | | | |
 
@@ -46,7 +46,7 @@ enterprise: true
 
 1. 新建一个组。
 
- ![生产组(/1.12/img/GUI-Organization-Groups-Create_New_Group_Modal-1_12.png)
+ ![生产组](/mesosphere/dcos/1.12/img/GUI-Organization-Groups-Create_New_Group_Modal-1_12.png)
 
  图 2. 创建新组屏幕
 

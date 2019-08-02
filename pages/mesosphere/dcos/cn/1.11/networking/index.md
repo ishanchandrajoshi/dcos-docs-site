@@ -45,7 +45,7 @@ Mesos DNS 是一个集中式的复制 DNS 服务器，在每个管理节点上�
 
 `dcos-dns` 拦截发源于代理节点的所有 DNS 查询。如果查询以 `.directory` TLD 结束，则它会在本地解析；如果以 `.mesos` 结束，则 `dcos-dns` 会把查询转发给在管理节点上运行的 `mesos-dns` 之一。否则，它会根据 TLD，将查询转发给已配置的上游 DNS 服务器。
 
-`dcos-dns` 也充当 DNS 服务器，适合任何利用名为 [dcos-l4lb] 的 DC/OS 内部负载均衡器进行负载均衡的服务(/cn/1.11/networking/load-balancing-vips/)。通过 dcos-l4lb 进行负载均衡的服务均获得 [virtual-ip-address (VIP)](/mesosphere/dcos/cn/1.11/networking/load-balancing-vips/virtual-ip-addresses/) 以及 `"*.l4lb.thisdcos.directory"` 域中的 FQDN。然后，FQDN 将存储在 dcos-dns 中，并发送给集群中的其他 DCOS DNS 服务器。这为任何由 Minuteman 进行负载均衡的任务提供了高度可用的分布式 DNS 服务。如需更多信息，请参阅 [dcos-net 存储库](https://github.com/dcos/dcos-net/blob/master/docs/dcos_dns.md)。
+`dcos-dns` 也充当 DNS 服务器，适合任何利用名为 [dcos-l4lb] 的 DC/OS 内部负载均衡器进行负载均衡的服务(/mesosphere/dcos/cn/1.11/networking/load-balancing-vips/)。通过 dcos-l4lb 进行负载均衡的服务均获得 [virtual-ip-address (VIP)](/mesosphere/dcos/cn/1.11/networking/load-balancing-vips/virtual-ip-addresses/) 以及 `"*.l4lb.thisdcos.directory"` 域中的 FQDN。然后，FQDN 将存储在 dcos-dns 中，并发送给集群中的其他 DCOS DNS 服务器。这为任何由 Minuteman 进行负载均衡的任务提供了高度可用的分布式 DNS 服务。如需更多信息，请参阅 [dcos-net 存储库](https://github.com/dcos/dcos-net/blob/master/docs/dcos_dns.md)。
 
 # <a name="load-balancing"></a>负载均衡
 DC/OS 为第 4 层和第 7 层负载均衡提供了不同的选项。以下章节介绍在这两个层上提供的各种特性。

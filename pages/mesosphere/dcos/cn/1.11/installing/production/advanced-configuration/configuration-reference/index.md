@@ -511,7 +511,7 @@ Mesos 管理节点在内存中保留的每个框架的完成任务数。在具�
 <p class="message--note"><strong>注意：</strong> 对于较慢的网络，请考虑更改为 <code>process_timeout: 600</code>。</p>
 
 ## public_agent_list
-[公共代理] (/cn/1.11/overview/concepts/#public-agent-node)主机名的  IPv4 地址的 YAML 嵌套列表（`-`）。
+[公共代理](/mesosphere/dcos/cn/1.11/overview/concepts/#public-agent-node)主机名的  IPv4 地址的 YAML 嵌套列表（`-`）。
 
 <p class="message--note"><strong>注意：</strong> <code>public_agent_list</code> 不是生产安装工具的必需参数。</p>
 

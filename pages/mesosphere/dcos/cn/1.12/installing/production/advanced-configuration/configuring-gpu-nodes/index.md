@@ -25,7 +25,7 @@ DC/OS 支持将 GPU（图形处理单元）分配给您的长期运行 DC/OS 服
  -** `enable_gpu_isolation`**：指示是否在 DC/OS 中启用 GPU 支持。默认设置为 `enable_gpu_isolation: 'true'`。
  -** `gpus_are_scarce`**：指示是否将 GPU 作为群集中的稀缺资源。默认设置为 `gpus_are_scarce: 'true'`，这意味着 DC/OS 仅为为占用 GPU 资源配置的服务保留 GPU 节点。值得注意的是，此设置将影响在 DC/OS 的哪些代理节点部署 GPU 感知框架。此设置不影响框架在运行时可能启动的具体任务。框架可以在有 GPU 的代理节点上安排非 GPU 任务。
 
- 有关更多信息，请参阅 [配置参数文档] (/1.12/installing/production/advanced-configuration/configuration-reference/#enable-gpu-isolation) 和 Mesos [Nvidia GPU 支持文档] （http://mesos.apache.org/documentation/latest/gpu-support/#external-dependencies）。
+ 有关更多信息，请参阅 [配置参数文档](/mesosphere/dcos/1.12/installing/production/advanced-configuration/configuration-reference/#enable-gpu-isolation) 和 Mesos [Nvidia GPU 支持文档](http://mesos.apache.org/documentation/latest/gpu-support/#external-dependencies）。
 
 ## 带有 GPU 的 AWS EC2 DC/OS 安装
 

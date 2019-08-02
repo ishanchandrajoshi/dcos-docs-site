@@ -24,11 +24,11 @@ enterprise: true
 
 ## 先决条件
 
-- 现有密钥。以下示例使用了存储在 `developer` 路径名为 `my-secret` 的密钥。如果您完成[创建密钥]中的步骤(/cn/1.12/security/ent/secrets/create-secrets/)，则您将满足此先决条件。
+- 现有密钥。以下示例使用了存储在 `developer` 路径名为 `my-secret` 的密钥。如果您完成[创建密钥]中的步骤(/mesosphere/dcos/cn/1.12/security/ent/secrets/create-secrets/)，则您将满足此先决条件。
 
 - [已安装 DC/OS CLI](/mesosphere/dcos/cn/1.12/cli/install/) 以及 [已安装 DC/OS Enterprise CLI](/mesosphere/dcos/cn/1.12/cli/enterprise-cli/#ent-cli-install)。
 - 您必须 [获取根证书](/mesosphere/dcos/cn/1.12/security/ent/tls-ssl/get-cert/)，才能发布此部分的 curl 命令。
-- 您的[安全模式]的适当权限(/cn/1.12/security/ent/#security-modes)。
+- 您的[安全模式]的适当权限(/mesosphere/dcos/cn/1.12/security/ent/#security-modes)。
 
   <table class="table">
     <tr>

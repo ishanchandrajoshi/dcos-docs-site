@@ -19,7 +19,7 @@ excerpt: DC/OS Enterprise 和 DC/OS 开源可用的配置参数
 | aws_template_storage_bucket | 包含 [自定义高级 AWS 模板](/mesosphere/dcos/1.12/installing/ent/cloud/aws/advanced/#create-your-templates) 的 S3 bucket 的名称。 |
 | aws_template_storage_bucket_path | S3 bucket 内模板工件存储位置的路径。
 | aws_template_storage_region_name | 包含 S3 bucket 的分域。 |
-| aws_template_storage_secret_access_key | 拥有 AWS S3 bucket 的帐户的 [秘密访问密钥] (http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。|
+| aws_template_storage_secret_access_key | 拥有 AWS S3 bucket 的帐户的 [秘密访问密钥](http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。|
 | aws_template_upload | 是否将自定义高级 AWS 模板上传到 S3 bucket。 |
 | [bootstrap_url](#bootstrap-url) |（必填）DC/OS 安装工具存储自定义 DC/OS 构建文件的 URI 路径。 |
 | [cluster_docker_credentials](#cluster-docker-credentials) | 要传递给 Docker 的词典。 |
@@ -36,7 +36,7 @@ excerpt: DC/OS Enterprise 和 DC/OS 开源可用的配置参数
 | [master_external_loadbalancer](#master-external-loadbalancer) | 负载均衡器的 DNS 名称或 IP 地址。[enterprise type="inline" size="small" /] |
 | [mesos_container_log_sink](#mesos-container-log-sink) | 容器（任务）的日志管理器。 |
 | [platform](#platform) | 基础架构平台。 |
-| [public_agent_list](#public-agent-list) | [公共代理] (/1.12/overview/concepts/#public-agent-node) 主机名的 IPv4 地址的 YAML 嵌套列表(`-`)。|
+| [public_agent_list](#public-agent-list) | [公共代理](/mesosphere/dcos/1.12/overview/concepts/#public-agent-node) 主机名的 IPv4 地址的 YAML 嵌套列表(`-`)。|
 | [rexray_config](#rexray-config) | 在 Marathon 中启用外部持久卷的 [REX-Ray](https://rexray.readthedocs.io/en/v0.9.0/user-guide/config/) 配置方法。不能同时指定 `rexray_config` 和 `rexray_config_preset`。|
 | [rexray_config_preset](#rexray-config-preset) | 如果您在 AWS 上运行 DC/OS，将此参数设置为 `aws`，请将 `rexray_config` 参数设置为与 DC/OS 本身捆绑的合理默认 REX-Ray 配置。不能同时指定 `rexray_config` 和 `rexray_config_preset`。|
 
@@ -92,7 +92,7 @@ excerpt: DC/OS Enterprise 和 DC/OS 开源可用的配置参数
 | ca_certificate_path | 使用此路径设置自定义 CA 证书。参见 [使用自定义 CA 证书](/mesosphere/dcos/1.12/security/ent/tls-ssl/ca-custom#configuration-parameter-reference) 页面，获取详细的配置参数参考。[enterprise type="inline" size="small" /] |
 | ca_certificate_key_path | 使用此路径设置自定义 CA 证书。参见 [使用自定义 CA 证书](/mesosphere/dcos/1.12/security/ent/tls-ssl/ca-custom#configuration-parameter-reference) 页面，获取详细的配置参数参考。[enterprise type="inline" size="small" /] |
 | ca_certificate_chain_path | 使用此路径设置自定义 CA 证书。参见 [使用自定义 CA 证书](/mesosphere/dcos/1.12/security/ent/tls-ssl/ca-custom#configuration-parameter-reference) 页面，获取详细的配置参数参考。[enterprise type="inline" size="small" /] |
-| [iam_ldap_sync_interval] (/1.12/security/ent/ldap/ldap-sync/) | LDAP 同步操作之间的间隔（以秒为单位）。[enterprise type="inline" size="small" /] |
+| [iam_ldap_sync_interval](/mesosphere/dcos/1.12/security/ent/ldap/ldap-sync/) | LDAP 同步操作之间的间隔（以秒为单位）。[enterprise type="inline" size="small" /] |
 | [security](#security-enterprise) | 安全模式：宽容或严格。[enterprise type="inline" size="small" /] |
 | [ssh_key_path](#ssh-key-path) | 安装工具用来登录到目标节点的路径。 |
 | [ssh_port](#ssh-port) | SSH 的端口，例如 22。|
@@ -345,8 +345,8 @@ dns_search: dc1.example.com dc1.example.com example.com dc1.example.com dc2.exam
 ### enable_docker_gc
 指示是否运行 [docker-gc](https://github.com/spotify/docker-gc#excluding-images-from-garbage-collection) 脚本，一个简单的 Docker 容器和镜像垃圾回收脚本，每小时清理一次失散的 Docker 容器。您可以使用 `/etc/` 配置参数，设置运行时间行为。如需更多信息，请参阅 [文档](https://github.com/spotify/docker-gc#excluding-images-from-garbage-collection)
 
-* `enable_docker_gc: 'true'` 请每小时运行一次 docker-gc 脚本。这是 [云] (/1.12/installing/ent/cloud/) 模板安装的默认值。
-* `enable_docker_gc: 'false'` 请勿每小时运行一次 docker-gc 脚本。这是 [自定义] (/1.12/installing/ent/custom/) 安装的默认值。
+* `enable_docker_gc: 'true'` 请每小时运行一次 docker-gc 脚本。这是 [云](/mesosphere/dcos/1.12/installing/ent/cloud/) 模板安装的默认值。
+* `enable_docker_gc: 'false'` 请勿每小时运行一次 docker-gc 脚本。这是 [自定义](/mesosphere/dcos/1.12/installing/ent/custom/) 安装的默认值。
 
 ### enable_mesos_input_plugin
 
@@ -413,7 +413,7 @@ DC/OS 群集默认已启用 [故障域意识](/mesosphere/dcos/1.12/deploying-se
 ### gpus_are_scarce
 指示是否将 [GPU](/mesosphere/dcos/1.12/deploying-services/gpu/) 作为群集中的稀缺资源。
 
-* `gpus_are_scarce: 'true'` 将 GPU 视为稀缺资源。这样就把 GPU 完全保留给选择通过 [Mesos `GPU_RESOURCES` 框架功能] (http://mesos.apache.org/documentation/latest/gpu-support/) 使用 GPU 的服务。这是默认值。
+* `gpus_are_scarce: 'true'` 将 GPU 视为稀缺资源。这样就把 GPU 完全保留给选择通过 [Mesos `GPU_RESOURCES` 框架功能](http://mesos.apache.org/documentation/latest/gpu-support/) 使用 GPU 的服务。这是默认值。
 * `gpus_are_scarce: 'false'` 将 GPU 与其他资源同等对待。所有框架，不论是否使用 [Mesos `GPU_RESOURCES` 框架功能](http://mesos.apache.org/documentation/latest/gpu-support/)，都会没有差别地被提供 GPU。
 
 ### ip_detect_public_filename

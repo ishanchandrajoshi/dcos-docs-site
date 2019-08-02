@@ -62,8 +62,8 @@ MARATHON_TAG="..."
 
 在以下步骤中，我们假设您已经：
 
-1. 将 Marathon 企业镜像推送到您的专用注册表[（说明）] (/cn/1.12/deploying-services/private-docker-registry#tarball-instructions)，名称为 `${MARATHON_IMAGE}:${MARATHON_TAG}`。
-1. 将您的专用 Docker 凭据存储在密钥存储库 [（说明）] (/cn/1.12/deploying-services/private-docker-registry/#referencing-private-docker-registry-credentials-in-the-secrets-store-enterprise)中，名称为 `${DOCKER_REGISTRY_SECRET}`。
+1. 将 Marathon 企业镜像推送到您的专用注册表[（说明）](/mesosphere/dcos/cn/1.12/deploying-services/private-docker-registry#tarball-instructions)，名称为 `${MARATHON_IMAGE}:${MARATHON_TAG}`。
+1. 将您的专用 Docker 凭据存储在密钥存储库 [（说明）](/mesosphere/dcos/cn/1.12/deploying-services/private-docker-registry/#referencing-private-docker-registry-credentials-in-the-secrets-store-enterprise)中，名称为 `${DOCKER_REGISTRY_SECRET}`。
 
  <p class="message--warning"><strong>警告：</strong> 密钥的名称应该位于根路径（例如 <code>/some-secret-name</code>）中，或者以应用程序的名称为前缀（例如 <code>/${MARATHON_INSTANCE_NAME}/some-secret-name</code>）。如果不这样做，将使根 Marathon 无法读取密钥值，并且无法启动自定义 Marathon-on-Marathon 实例。</p>
 
@@ -79,7 +79,7 @@ Marathon 服务账户可能是可选或必填项，具体取决于您的 [安全
 
 1. 创建 2048 位 RSA 公私密钥对 (`${PRIVATE_KEY}` 和 `${PUBLIC_KEY}`) 并将值分别保存到当前目录中的单独文件中。
 
-   使用以下命令，我们创建一个公私密钥对。公钥将用于创建 Marathon 服务帐户。我们将私钥存储在 [密钥存储库] (/cn/1.12/security/ent/secrets/) 然后将其传递至 Marathon，供其进行自我授权。
+   使用以下命令，我们创建一个公私密钥对。公钥将用于创建 Marathon 服务帐户。我们将私钥存储在 [密钥存储库](/mesosphere/dcos/cn/1.12/security/ent/secrets/) 然后将其传递至 Marathon，供其进行自我授权。
 
     ```bash
     dcos security org service-accounts keypair ${PRIVATE_KEY} ${PUBLIC_KEY}
@@ -159,7 +159,7 @@ dcos security org users grant ${SERVICE_ACCOUNT} dcos:mesos:master:volume:princi
 # 步骤 5：安装具有分配角色 {.tabs} 的非本地 Marathon 实例
 在此步骤中，非本地 Marathon 实例安装在 DC/OS上，并分配了 Mesos 角色。
 
-创建一个自定义 JSON 配置，用于安装自定义非本机 Marathon 实例。JSON 文件内容因您的 [安全模式] 而有所不同(/cn/1.12/security/ent/#security-modes)。
+创建一个自定义 JSON 配置，用于安装自定义非本机 Marathon 实例。JSON 文件内容因您的 [安全模式] 而有所不同(/mesosphere/dcos/cn/1.12/security/ent/#security-modes)。
 
  确保使用正确的值替换 JSON 文件中的所有 `${VARIABLES}`。
 

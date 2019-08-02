@@ -50,7 +50,7 @@ DC/OS 组件使用 `systemd-journald` 来存储其日志。要访问 DC/OS 核�
 journalctl -u "dcos-*" -b
 ```
 
-输入组件名，您可以查看特定 [组件] (/1.12/overview/architecture/components/) 的日志。例如，要访问 Admin Router 日志，可运行此命令：
+输入组件名，您可以查看特定 [组件](/mesosphere/dcos/1.12/overview/architecture/components/) 的日志。例如，要访问 Admin Router 日志，可运行此命令：
 
 ```bash
 journalctl -u dcos-nginx -b

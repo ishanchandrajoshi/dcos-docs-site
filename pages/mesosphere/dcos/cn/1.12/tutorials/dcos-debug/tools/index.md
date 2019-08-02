@@ -284,7 +284,7 @@ Marathon [`queue` 端点](https://mesosphere.github.io/marathon/api-console/inde
 
 ## 社区
 
-[DC/OS 社区](https://dcos.io/community/?_ga=2.183442662.1394567794.1525106895-1279864600.1520288020)是通过 [Slack](http://chat.dcos.io/?_ga=2.183442662.1394567794.1525106895-1279864600.1520288020) 或 [邮寄列表] (https://groups.google.com/a/dcos.io/forum/#!forum/users)提出其他问题的好地方。同时记住，除了 DC/OS 社区之外，[Mesos](http://mesos.apache.org/community/) 和 [Marathon](https://mesosphere.github.io/marathon/support.html) 都有自己的社区。
+[DC/OS 社区](https://dcos.io/community/?_ga=2.183442662.1394567794.1525106895-1279864600.1520288020)是通过 [Slack](http://chat.dcos.io/?_ga=2.183442662.1394567794.1525106895-1279864600.1520288020) 或 [邮寄列表](https://groups.google.com/a/dcos.io/forum/#!forum/users)提出其他问题的好地方。同时记住，除了 DC/OS 社区之外，[Mesos](http://mesos.apache.org/community/) 和 [Marathon](https://mesosphere.github.io/marathon/support.html) 都有自己的社区。
 
 <a name="other-tools"></a>
 

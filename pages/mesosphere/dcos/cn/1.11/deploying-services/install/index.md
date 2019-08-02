@@ -26,7 +26,7 @@ dcos package install chronos
 
 ## 使用 Web 界面安装服务
 
-在 DC/OS Web 界面，可以在 **Services** 或 **Catalog** 选项卡中安装服务。“目录”选项卡显示软件包 [存储库] 中所有可用的 DC/OS 服务(/cn/1.11/administering-clusters/repo/)。“服务”选项卡为本地 DC/OS Marathon 实例提供了完整的功能界面。
+在 DC/OS Web 界面，可以在 **Services** 或 **Catalog** 选项卡中安装服务。“目录”选项卡显示软件包 [存储库] 中所有可用的 DC/OS 服务(/mesosphere/dcos/cn/1.11/administering-clusters/repo/)。“服务”选项卡为本地 DC/OS Marathon 实例提供了完整的功能界面。
 
 
 ### 目录选项卡

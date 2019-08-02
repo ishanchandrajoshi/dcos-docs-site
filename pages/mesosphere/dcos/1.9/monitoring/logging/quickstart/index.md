@@ -186,4 +186,4 @@ You can view logs of DC/OS components with the `dcos node log` command.
     ...
     ```
 
-    See more at [DC/OS Command Reference page for dcos-node-log]. (/1.10/cli/command-reference/dcos-node/dcos-node-log/)
+    See more at [DC/OS Command Reference page for dcos-node-log](/mesosphere/dcos/1.10/cli/command-reference/dcos-node/dcos-node-log/).

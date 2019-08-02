@@ -230,7 +230,7 @@ ping slave.mesos
 ```
 
 ### macOS OpenVPN 客户端安装
-* 如果使用 [homebrew] (http://brew.sh/)，就要安装：
+* 如果使用 [homebrew](http://brew.sh/)，就要安装：
     ```
     brew install openvpn
     ```

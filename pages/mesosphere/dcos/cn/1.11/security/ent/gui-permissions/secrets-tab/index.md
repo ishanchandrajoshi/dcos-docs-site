@@ -41,7 +41,7 @@ enterprise: true
 
  图 3. 插入权限字符串
 
-1. 在 **Permissions Strings** 字段中复制并粘贴权限。根据您的 [安全模式] 选择权限字符串(/cn/1.11/security/ent/#security-modes)，单击**ADD PERMISSIONS**，然后单击**Close**。
+1. 在 **Permissions Strings** 字段中复制并粘贴权限。根据您的 [安全模式] 选择权限字符串(/mesosphere/dcos/cn/1.11/security/ent/#security-modes)，单击**ADD PERMISSIONS**，然后单击**Close**。
 
 ## 禁用
 

@@ -21,7 +21,7 @@ beta: true
 
 1. 使用 DC/OS [cloud_images](https://github.com/dcos/dcos/tree/master/cloud_images) 脚本作为模板。这些脚本构建 CenTos7 AMI，并安装所有 DC/OS 前提条件。
 
-    验证您是否可以在不修改的情况下，原样使用这些脚本构建和部署 AMI。AMI 必须部署到要启动群集的每个分域。DC/OS Packer 构建脚本 [create_dcos_ami.sh] (https://github.com/dcos/dcos/blob/master/cloud_images/centos7/create_dcos_ami.sh)可以在运行脚本之前，通过设置环境变量 `DEPLOY_REGIONS` 将 AMI 部署到多个分域。
+    验证您是否可以在不修改的情况下，原样使用这些脚本构建和部署 AMI。AMI 必须部署到要启动群集的每个分域。DC/OS Packer 构建脚本 [create_dcos_ami.sh](https://github.com/dcos/dcos/blob/master/cloud_images/centos7/create_dcos_ami.sh)可以在运行脚本之前，通过设置环境变量 `DEPLOY_REGIONS` 将 AMI 部署到多个分域。
 
 1. 使用 AWS CloudFormation Web 控制台启动 DC/OS 高级模板，并指定 DC/OS cloud_images AMI。验证群集是否已成功启动。如需更多信息，请参阅 [文档](/mesosphere/dcos/cn/1.11/installing/evaluation/cloud-installation/aws/advanced/#launch)。
 

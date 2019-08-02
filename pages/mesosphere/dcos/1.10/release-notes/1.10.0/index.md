@@ -20,7 +20,7 @@ DC/OS 1.10 includes many new capabilities and expands the collection of data and
   - Ability to deploy Data Services into folders to enable multi team deployments. [enterprise type="inline" size="small" /]
   - Ability to deploy to CNI-Based virtual networks.
 
-Please try out the new features and updated data services. Provide any feedback through our support channel: [support.mesosphere.com] (https://support.mesosphere.com/).
+Please try out the new features and updated data services. Provide any feedback through our support channel: [support.mesosphere.com](https://support.mesosphere.com/).
 
 ### Contents
 - [New Features and Capabilities](#new-features)
