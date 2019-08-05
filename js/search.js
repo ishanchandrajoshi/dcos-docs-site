@@ -132,6 +132,37 @@ if (searchForm) {
     );
 
     // Select widgets
+    // Sphere - ksphere, mesosphere
+    search.addWidget(
+        instantsearch.widgets.menuSelect({
+            container: '#search-sphere',
+            attributeName: 'sphere',
+            templates: {
+                seeAllOption: 'Sphere',
+            },
+            autoHideContainer: false,
+            sort: ['name:asc'],
+            cssClasses: {
+                select: 'search__filter__list',
+            },
+        }),
+    );
+
+    // Product - ie Konvoy, DCOS
+    search.addWidget(
+        instantsearch.widgets.menuSelect({
+            container: '#search-product',
+            attributeName: 'product',
+            templates: {
+                seeAllOption: 'Product',
+            },
+            autoHideContainer: false,
+            sort: ['name:asc'],
+            cssClasses: {
+                select: 'search__filter__list',
+            },
+        }),
+    );
     // TODO: Waiting on pull request for cssClasses fix.
     search.addWidget(
         instantsearch.widgets.menuSelect({
